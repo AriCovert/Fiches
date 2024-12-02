@@ -4,9 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Démontrer que des points forment un plan ou non</title>
-  
-<link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Styles CSS intégrés */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
 
+        .fiche {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 1.2;
+        }
+
+        .fraction > .num {
+            display: block;
+            font-size: 1rem;
+            border-bottom: 1px solid #000;
+            padding: 0 5px;
+        }
+
+        .fraction > .den {
+            display: block;
+            font-size: 1rem;
+            padding: 0 5px;
+        }
+
+        sub {
+            font-size: 0.8rem;
+            vertical-align: sub;
+        }
+
+        .vector {
+            display: inline-block;
+            position: relative;
+            color: #007BFF; /* Bleu pour les vecteurs */
+        }
+
+        .vector::before {
+            content: "→";
+            position: absolute;
+            top: -1em;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: #007BFF;
+        }
+
+        .unknown {
+            color: #FF4500; /* Rouge pour les inconnues */
+        }
+
+        .point {
+            color: #19da19; /* Vert pour les points */
+        }
+
+        strong {
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
     <div class="fiche">
