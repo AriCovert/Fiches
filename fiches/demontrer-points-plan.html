@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démontrer que des points forment un plan ou non</title>
+  
+<link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+    <div class="fiche">
+        <h1>Démontrer que des points forment un plan ou non</h1>
+        <p>On a des points, comme :</p>
+        <ul>
+            <li><span class="point">A</span> (1 ; 0 ; 4)</li>
+            <li><span class="point">B</span> (0 ; 4 ; 2)</li>
+            <li><span class="point">C</span> (5 ; 1 ; 0)</li>
+        </ul>
+        <p>Est-ce que <span class="point">A</span>, <span class="point">B</span> et <span class="point">C</span> forment un plan ?</p>
+        <p>On calcule 2 vecteurs quelconques, tels que :</p>
+        <pre><code>
+<span class="vector">AB</span> = (<span class="unknown">x<sub>B</sub></span> – <span class="unknown">x<sub>A</sub></span> ; <span class="unknown">y<sub>B</sub></span> – <span class="unknown">y<sub>A</sub></span> ; <span class="unknown">z<sub>B</sub></span> – <span class="unknown">z<sub>A</sub></span>)
+   = (0 - 1 ; 4 - 0 ; 2 - 4)
+   = (-1 ; 4 ; -2)
+<span class="vector">AC</span> = (4 ; 1 ; -4)
+        </code></pre>
+        <p>Puis on divise les coordonnées <span class="unknown">x</span>, <span class="unknown">y</span> et <span class="unknown">z</span> des 2 vecteurs, ce qui nous donne :</p>
+        <p>
+            <span class="fraction">
+                <span class="num"><span class="unknown">x<sub>AC</sub></span></span>
+                <span class="den"><span class="unknown">x<sub>AB</sub></span></span>
+            </span>
+            = -1 / 4
+        </p>
+        <p>
+            <span class="fraction">
+                <span class="num"><span class="unknown">y<sub>AC</sub></span></span>
+                <span class="den"><span class="unknown">y<sub>AB</sub></span></span>
+            </span>
+            = 4
+        </p>
+        <p>Ici, <span class="unknown">x</span> et <span class="unknown">y</span> ne sont pas égaux, donc :</p>
+        <p><span class="vector">AB</span> et <span class="vector">AC</span> ne sont pas colinéaires. <span class="point">A</span>, <span class="point">B</span> et <span class="point">C</span> forment donc un plan.</p>
+    </div>
+</body>
+</html>
