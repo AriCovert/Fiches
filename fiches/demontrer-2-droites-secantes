@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démontrer que 2 droites sont sécantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .fiche {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .vector {
+            display: inline-block;
+            position: relative;
+            color: #007BFF;
+        }
+
+        .vector::before {
+            content: "→";
+            position: absolute;
+            top: -1em;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: #007BFF;
+        }
+
+        .unknown {
+            color: #FF4500;
+        }
+
+        .point {
+            color: #228B22;
+        }
+
+        .line {
+            color: #ffdd1f; /* Jaune pour les droites */
+            font-weight: bold;
+        }
+
+        .parametric {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f4f4f9;
+            border-left: 4px solid #007BFF;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+        }
+
+        .system {
+            display: flex;
+            align-items: flex-start;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+        }
+
+        .system .equiv {
+            color: #ff0fff; /* Violet pour le <==> */
+            font-size: 1.2rem;
+            padding-right: 10px;
+        }
+
+        .system .bracket {
+            font-size: 2rem;
+            line-height: 1.1;
+            padding-right: 10px;
+        }
+
+        .system .equations {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .triplet {
+            display: inline-block;
+            font-size: 0.8rem; /* Réduction de la taille */
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+
+        .triplet span {
+            display: inline-block;
+            margin: 0 2px;
+        }
+
+        .triplet::before {
+            content: "(";
+            font-size: 1rem;
+            vertical-align: middle;
+        }
+
+        .triplet::after {
+            content: ")";
+            font-size: 1rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="fiche">
+        <h1>Démontrer que 2 droites sont parallèles</h1>
+        <p><span class="line">(AB)</span> et <span class="line">(FD)</span> sont-elles parallèles ?</p>
+        <p><span class="line">(AB)</span> et <span class="line">(FD)</span> sont parallèles si <span class="vector">AB</span> et <span> class"=vector">FD</span> sont colinéaires.</p>
+        <p>On a donc les vecteurs :
+        <ul>
+            <li><span class="vector">AB</span>(3 ; -1 ; 3) et <span class="vector">FD</span>(0 ; -1 ; 6)</li>
+        </ul>
+            <li>Or <span class="unknown">x<sub><span class="vector">AB</span></sub></span> = 3 ≠ 0 et <span class="unknown">x<sub><span class="vector">FD</span></sub></span> = 0</li>
+        <p>Les vecteurs <span class="vector">AB</span> et <span class="vector">FD</span> ne sont pas colinéaires donc les droites <span class="line">(AB)</span> et <span class="line">(FD)</span> ne sont pas parallèles.</p>
+</body>
+</html>
