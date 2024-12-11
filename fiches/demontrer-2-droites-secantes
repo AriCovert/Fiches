@@ -136,12 +136,56 @@
     <div class="fiche">
         <h1>Démontrer que 2 droites sont sécantes</h1>
         <p><span class="line">(AB)</span> et <span class="line">(FD)</span> sont-elles sécantes ?</p>
-        <p>Pour savoir, on fait une représentation paeamétrique de <span class="line">(FD)</span> avec <span class="point">B</span> (1;1;1) , ce qui donne :</p>
-        <p>On a donc les vecteurs :
-        <ul>
-            <li><span class="vector">AB</span>(3 ; -1 ; 3) et <span class="vector">FD</span>(0 ; -1 ; 6)</li>
-        </ul>
-            <li>Or <span class="unknown">x<sub><span class="vector">AB</span></sub></span> = 3 ≠ 0 et <span class="unknown">x<sub><span class="vector">FD</span></sub></span> = 0</li>
-        <p>Les vecteurs <span class="vector">AB</span> et <span class="vector">FD</span> ne sont pas colinéaires donc les droites <span class="line">(AB)</span> et <span class="line">(FD)</span> ne sont pas parallèles.</p>
+        <p>Pour savoir, on fait une représentation paeamétrique de <span class="line">(FD)</span> avec <span class="point">B</span> (1 ; 1 ; 1) , ce qui donne :</p>
+        <div class="parametric">
+            <div class="system">
+                <div class="bracket">{</div>
+                <div class="equations">
+                    <div>x = 1</div>
+                    <div>y = -k + 1       ,k ∈ ℝ</div> 
+                    <div>z = 6k + 1</div>
+                </div>
+            </div>
+        </div>
+        <ul><li> On utilise un autre réel que t car il est déja utilisé dans une équation.</li></ul>
+        <p><span class="line">(AB)</span> et <span class="line">(FD)</span> sont sécantes si le système suivant a une solution.</p>
+        <div class="parametric">
+            <div class="system">
+                <div class="bracket">{</div>
+                <div class="equations">
+                    <div>1 = 3t + 4</div>
+                    <div>-k + 1 = -t + 1</div> 
+                    <div>6k + 1 = -3t + 2</div>
+                </div>
+            </div>
+        </div>
+        <p>Ce qui nous donne : </p>
+        <p> </p>
+            <li> le t est donné donc on résout les 3 équations directement, sinon on en résoudrait que 2 </li>
+        <div class="parametric">
+            <div class="system">
+                <div class="equiv">&lt;==&gt;</div>
+                <div class="bracket">{</div>
+                <div class="equations">
+                    <div>t = -1</div>
+                    <div>-k + 1 = 2</div> 
+                    <div>6k + 1 = 5</div>
+                </div>
+            </div>
+        </div>
+        <div class="parametric">
+            <div class="system">
+                <div class="equiv">&lt;==&gt;</div>
+                <div class="bracket">{</div>
+                <div class="equations">
+                    <div>t = -1</div>
+                    <div>k = -1</div> 
+                    <div>k = 4/6 = 2/3</div>
+                </div>
+            </div>
+        </div>
+        
+        <p> </p>
+        <p>Le système n'est pas compatible, les droites <span class="line">(AB)</span> et <span class="line">(FD)</span> ne sont donc pas sécantes.</p>
 </body>
 </html>
